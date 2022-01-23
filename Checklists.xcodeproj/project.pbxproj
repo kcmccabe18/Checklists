@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD5E8BC624D5BC3000A763EE /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E8BC524D5BC3000A763EE /* AddItemViewController.swift */; };
+		DD5E8BC624D5BC3000A763EE /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E8BC524D5BC3000A763EE /* ItemDetailViewController.swift */; };
 		DD80A09424D1EF4C00CF4598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80A09324D1EF4C00CF4598 /* AppDelegate.swift */; };
 		DD80A09624D1EF4C00CF4598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80A09524D1EF4C00CF4598 /* SceneDelegate.swift */; };
 		DD80A09824D1EF4C00CF4598 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80A09724D1EF4C00CF4598 /* ChecklistViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD5E8BC524D5BC3000A763EE /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		DD5E8BC524D5BC3000A763EE /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		DD80A09024D1EF4C00CF4598 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD80A09324D1EF4C00CF4598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD80A09524D1EF4C00CF4598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				DD80A09E24D1EF4D00CF4598 /* LaunchScreen.storyboard */,
 				DD80A0A124D1EF4D00CF4598 /* Info.plist */,
 				DDE1D9E424D35609006A4FB6 /* ChecklistItem.swift */,
-				DD5E8BC524D5BC3000A763EE /* AddItemViewController.swift */,
+				DD5E8BC524D5BC3000A763EE /* ItemDetailViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = Razeware;
+				ORGANIZATIONNAME = KerryMcCabe;
 				TargetAttributes = {
 					DD80A08F24D1EF4B00CF4598 = {
 						CreatedOnToolsVersion = 12.0;
@@ -169,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5E8BC624D5BC3000A763EE /* AddItemViewController.swift in Sources */,
+				DD5E8BC624D5BC3000A763EE /* ItemDetailViewController.swift in Sources */,
 				DD80A09824D1EF4C00CF4598 /* ChecklistViewController.swift in Sources */,
 				DD80A09424D1EF4C00CF4598 /* AppDelegate.swift in Sources */,
 				DD80A09624D1EF4C00CF4598 /* SceneDelegate.swift in Sources */,
