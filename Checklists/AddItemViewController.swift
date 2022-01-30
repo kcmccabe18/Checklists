@@ -1,17 +1,29 @@
-
+//
+//  AddItemViewController.swift
+//  Checklists
+//
+//  Created by Fahim Farook on 01/08/2020.
+//  Copyright © 2020 Razeware. All rights reserved.
+//
 
 import UIKit
 
-protocol ItemDetailViewControllerDelegate: AnyObject {
-  func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController)
-  func itemDetailViewController(_ controller: ItemDetailViewController, didFinishAdding item: ChecklistItem)
-  func itemDetailViewController(_ controller: ItemDetailViewController, didFinishEditing item: ChecklistItem)
+protocol AddItemViewControllerDelegate: class {
+  func addItemViewControllerDidCancel(_ controller: ItemDetailViewController)
+  func addItemViewController(
+    _ controller: ItemDetailViewController,
+    didFinishAdding item: ChecklistItem
+  )
+  func addItemViewController(
+    _ controller: ItemDetailViewController,
+    didFinishEditing item: ChecklistItem
+  )
 }
 
 class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
 	@IBOutlet weak var textField: UITextField!
 	@IBOutlet weak var doneBarButton: UIBarButtonItem!
-  weak var delegate: ItemDetailViewControllerDelegate?
+  weak var delegate: AddItemViewControllerDelegate?
   var itemToEdit: ChecklistItem?
 
 	override func viewDidLoad() {
@@ -31,17 +43,17 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
 
   // MARK: - Actions
   @IBAction func cancel() {
-    delegate?.itemDetailViewControllerDidCancel(self)
+    delegate?.addItemViewControllerDidCancel(self)
   }
 
   @IBAction func done() {
     if let item = itemToEdit {
       item.text = textField.text!
-      delegate?.itemDetailViewController(self, didFinishEditing: item)
+      delegate?.addItemViewController(self, didFinishEditing: item)
     } else {
-    let item = ChecklistItem()
-    item.text = textField.text!
-    delegate?.itemDetailViewController(self, didFinishAdding: item)
+      let item = ChecklistItem()
+      item.text = textField.text!
+      delegate?.addItemViewController(self, didFinishAdding: item)
     }
   }
 
